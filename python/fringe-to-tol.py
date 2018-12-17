@@ -23,10 +23,10 @@ fringe = float(input('Fringes?'))
 
 # wavelength:
 '''  Can change this if necessary, though it's 
-     almost universally 633nm because that's how the 
+     almost universally 632.8 nm because that's how the 
      zygo machines' lasers come configured.
 '''
-w = 633
+w = 632.8
 
 # perform calculations:
 res = float((fringe * abs(radius) * w) / ((2 * abs(radius) - math.sqrt(4 * radius**2 - ca**2))) * 10e-7)
