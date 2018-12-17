@@ -24,10 +24,10 @@ tol = float(input('Tolerance?'))
 
 # wavelength:
 '''  Can change this if necessary, though it's 
-     almost universally 633nm because that's how the 
+     almost universally 632.8 nm because that's how the 
      zygo machines' lasers come configured.
 '''
-w = 633
+w = 632.8
 
 # perform calculations:
 res = (tol * 1e6 * (2 * abs(radius) - math.sqrt(4 * radius**2 - ca**2))) / (abs(radius) * w)
