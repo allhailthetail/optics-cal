@@ -26,7 +26,7 @@ print(
 
         1. Full Plano
         2. Full CNC
-        3. Plano start THEN CNC
+        3. Plano SIDE 1 THEN CNC
         4. Achromat
 
         '''
@@ -39,7 +39,7 @@ if entry == 1:
 elif entry == 2:
     code[0] = 'CCC'
 elif entry == 3:
-    code[0] = 'PCC'
+    code[0] = 'PPC'
 elif entry == 4:
     code[0] = 'M  '
     code[3] = 'AC'
@@ -61,7 +61,7 @@ entry = int(input('coated or centered?'))
 if entry == 1:
     code[1] = 'B '
 elif entry == 2:
-    code[1] = 'B '
+    code[1] = 'BA'
 elif entry == 3:
     code[1] = 'AB'
 elif entry == 4:
